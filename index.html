@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">ShopEasy</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-icon">
+                    <a href="checkout.html">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMTYwIDQxNkMxMTYuODQgNDE2IDgzLjAyIDQ0OS44IDgwIDQ5M2gyODBjLTMtNDMuMi0zNi44LTc3LTgwLTc3SDE2MHptMC0zMkMxMDcuNzMgMzg0IDY0IDMyMC4yNyA2NCAyNDh2LTY0YzAtMTcuNjcgMTQuMzMtMzIgMzItMzJoMzUyYzE3LjY3IDAgMzIgMTQuMzMgMzIgMzJ2NjRjMCA3Mi4yNy00My43MyAxMzYtOTYgMTM2SDE2MHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4="
+                            alt="Cart">
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Fashion Sale">
+                        <div class="carousel-caption">
+                            <h2>Summer Collection</h2>
+                            <p>Up to 50% off selected items</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Electronics">
+                        <div class="carousel-caption">
+                            <h2>New Tech Gadgets</h2>
+                            <p>The latest devices at competitive prices</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Jewelry">
+                        <div class="carousel-caption">
+                            <h2>Luxury Jewelry</h2>
+                            <p>Exquisite pieces for every occasion</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control prev">&#10094;</button>
+                <button class="carousel-control next">&#10095;</button>
+                <div class="carousel-indicators"></div>
+            </div>
+        </section>
+
+        <!-- Add this right before the closing body tag -->
+        <button id="scrollToTop" title="Go to top">↑</button>
+
+
+        <section class="search-section">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <button id="search-btn">Search</button>
+        </section>
+
+        <section class="categories">
+            <h2>Categories</h2>
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="electronics">Electronics</button>
+                <button class="category-btn" data-category="jewelery">Jewelery</button>
+                <button class="category-btn" data-category="men's clothing">Men's Clothing</button>
+                <button class="category-btn" data-category="women's clothing">Women's Clothing</button>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Featured Products</h2>
+            <div class="products-grid" id="products-container">
+                <!-- Products will be loaded here -->
+                <div class="loading">Loading products...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

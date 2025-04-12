@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">ShopEasy</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-icon">
+                    <a href="checkout.html">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMTYwIDQxNkMxMTYuODQgNDE2IDgzLjAyIDQ0OS44IDgwIDQ5M2gyODBjLTMtNDMuMi0zNi44LTc3LTgwLTc3SDE2MHptMC0zMkMxMDcuNzMgMzg0IDY0IDMyMC4yNyA2NCAyNDh2LTY0YzAtMTcuNjcgMTQuMzMtMzIgMzItMzJoMzUyYzE3LjY3IDAgMzIgMTQuMzMgMzIgMzJ2NjRjMCA3Mi4yNy00My43MyAxMzYtOTYgMTM2SDE2MHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4="
+                            alt="Cart">
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="checkout-section">
+            <h1>Checkout</h1>
+
+            <div class="checkout-container">
+                <div class="order-summary">
+                    <h2>Your Order</h2>
+                    <div id="cart-items">
+                        <!-- Cart items will be loaded here -->
+                        <p class="empty-cart">Your cart is empty</p>
+                    </div>
+                    <div class="order-totals">
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="shipping">
+                            <span>Shipping:</span>
+                            <span id="shipping">$5.00</span>
+                        </div>
+                        <div class="total">
+                            <span>Total:</span>
+                            <span id="total">$5.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-form">
+                    <h2>Payment Information</h2>
+                    <form id="checkout-form">
+                        <div class="form-group">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-number">Card Number:</label>
+                            <input type="text" id="card-number" name="card-number" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry">Expiry Date:</label>
+                                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV:</label>
+                                <input type="text" id="cvv" name="cvv" required>
+                            </div>
+                        </div>
+                        <button type="submit" id="place-order">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Product</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">ShopEasy</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-icon">
+                    <a href="checkout.html">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNMTYwIDQxNkMxMTYuODQgNDE2IDgzLjAyIDQ0OS44IDgwIDQ5M2gyODBjLTMtNDMuMi0zNi44LTc3LTgwLTc3SDE2MHptMC0zMkMxMDcuNzMgMzg0IDY0IDMyMC4yNyA2NCAyNDh2LTY0YzAtMTcuNjcgMTQuMzMtMzIgMzItMzJoMzUyYzE3LjY3IDAgMzIgMTQuMzMgMzIgMzJ2NjRjMCA3Mi4yNy00My43MyAxMzYtOTYgMTM2SDE2MHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4="
+                            alt="Cart">
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="product-images">
+                <img id="product-image" src="" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h1 id="product-title"></h1>
+                <div class="product-meta">
+                    <span class="product-category" id="product-category"></span>
+                    <span class="product-rating" id="product-rating"></span>
+                </div>
+                <p class="product-price" id="product-price"></p>
+                <p class="product-description" id="product-description"></p>
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button id="decrease-qty">-</button>
+                        <span id="quantity">1</span>
+                        <button id="increase-qty">+</button>
+                    </div>
+                    <button id="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
