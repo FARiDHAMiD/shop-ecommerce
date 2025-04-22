@@ -1,3 +1,6 @@
 ssh-keygen -t ed25519 -C "faridmohamedfarid@gmail.com"
-eval "$(ssh-agent -s)" add to agent
+eval "$(ssh-agent -s)" add to agent -- Agent pid 1706
+Add SSH key to ssh-agent: 
 ssh-add ~/.ssh/id_ed25519
+copy public key: 
+cat ~/.ssh/id_ed25519.pub
