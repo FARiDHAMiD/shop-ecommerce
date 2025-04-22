@@ -1,6 +1,7 @@
 // Global variables
 let products = [];
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
+console.log(cart)
 
 // DOM Elements
 const elements = {
